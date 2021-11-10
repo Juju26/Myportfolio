@@ -191,11 +191,11 @@
                 <h2 class="section-title">Contact</h2>
 
                 <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" name ="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" name="Email" class="contact__input">
-                        <textarea name="Message" placeholder='Enter your message and make sure you send the same in any other messaging platform to me..' id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Submit" class="contact__button button">
+                    <form action="" id="contact form" class="contact__form"> 
+                        <input type="text" placeholder="Name" id="name" name ="Name" class="contact__input">
+                        <input type="email" placeholder="Email" id="email" name="Email" class="contact__input">
+                        <textarea name="Message" id="message" placeholder='Enter your message and make sure you send the same in any other messaging platform to me..' id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <button type="button" id="submit" class="contact__button button">Submit</button>
                     </form>
                 </div>
             </section>
@@ -211,13 +211,63 @@
             </div>
             <p>&#169; 2021 copyright all right reserved</p>
         </footer>
+    </body>
+<script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-firestore.js"></script>
+<script type="text/javascript">
+      (function() {
+        var firebaseConfig = {
+    apiKey: "AIzaSyCjFJTMdxOKyNGJ2PijXeJK5U32VE8tmUc",
+    authDomain: "portfolio-form-db.firebaseapp.com",
+    projectId: "portfolio-form-db",
+    storageBucket: "portfolio-form-db.appspot.com",
+    messagingSenderId: "603076052976",
+    appId: "1:603076052976:web:db55ee8f788d4f5d6e7f35",
+    measurementId: "G-TD8TXQ4B0Y"
+  };
+firebase.initializeApp(firebaseConfig);
+var push_to_firebase = function(data){
+        //alert("Thanks for sending a message. I'll try and get back to you as soon as possible.")
+        var db = firebase.firestore();
 
+        db.collection("messages").add({
+            name: data["name"],
+            email: data["email"],
+            message: data["msg"],
+           
+        })
+        .then(function(docRef) {
+            console.log("Message sent, ID: ", docRef.id);
+            location.reload();
+        })
+        .catch(function(error) {
+            console.error("Message could not be sent: ", error);
+        });
+      }
+
+      var contact_submit = function(){
+        var name = document.getElementById("name");
+        var email = document.getElementById("email");
+        var msg = document.getElementById("message");
+
+        var data = {
+          "name": name.value,
+          "email": email.value,
+          "msg": msg.value
+        }
+        push_to_firebase(data);
+
+      }
+
+      document.getElementById("submit").addEventListener("click", contact_submit);
+    })();
+  </script>
 
         <!-- Scroll effect-->
         <script src="https://unpkg.com/scrollreveal"></script>
 
         <!--scripting -->
         <script src="assets/js/main.js"></script>
-    </body>
+ 
     
 </html>
