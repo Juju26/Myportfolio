@@ -29,7 +29,7 @@ const About = () => {
     {
       icon: <Code size={24} />,
       title: "Tech Enthusiast",
-      description: "Passionate about learning new programming languages and frameworks."
+      description: "Passionate about learning new technologies and   frameworks."
     },
     {
       icon: <Globe size={24} />,
@@ -45,7 +45,7 @@ const About = () => {
 
   const achievements = [
     {
-      number: "2+",
+      number: "3+",
       label: "Years Experience"
     },
     {

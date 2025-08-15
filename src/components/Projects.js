@@ -23,8 +23,8 @@ const Projects = () => {
         "Integration with existing traffic infrastructure",
         "Machine learning algorithms for pattern recognition"
       ],
-      github: "#",
-      live: "#",
+      github: "",
+      live: "",
       category: "AI/ML"
     },
     {
@@ -39,24 +39,26 @@ const Projects = () => {
         "Audio feedback system for user guidance",
         "Wearable technology with lightweight design"
       ],
-      github: "#",
-      live: "#",
+      github: "https://github.com/Juju26/smart-goggles",
+      live: "https://www.youtube.com/watch?v=IgQcCB_AU5o",
       category: "IoT/AI"
     },
     {
       id: 3,
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce application built with modern web technologies, featuring user authentication, product management, and secure payment processing.",
-      image: "/assets/img/skillsimg.png",
-      technologies: ["React.js", "Node.js", "MongoDB", "Express.js", "JWT", "Stripe API"],
+      title: "iTrolley",
+      description: "A smart shopping assistant leveraging Indoor Positioning System (IPS) using Bluetooth Low Energy (BLE) beacons to accurately identify user location within the store. The app generates the shortest path for picking items in the shopping list by applying efficient shortest path algorithms, optimizing the shopping experience.",
+      image: "/assets/img/iTrolley.png",
+      technologies: ["React.js", "django", "BLE", "Indoor Positioning"],
       features: [
+       "Indoor positioning via BLE beacons",
+        "Shortest path calculation for item picking",
         "User authentication and authorization",
         "Product catalog with search and filtering",
         "Shopping cart and checkout system",
         "Admin panel for product management"
-      ],
-      github: "#",
-      live: "#",
+    ],
+      github: "https://github.com/Juju26/i-trolley/tree/master",
+      live: "https://docs.google.com/document/d/19TrnI-lvzC2PnDuTdokmdL7jVKtubk53/edit?usp=sharing&ouid=113029827350424965909&rtpof=true&sd=true",
       category: "Web Development"
     },
     {

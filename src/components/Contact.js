@@ -50,15 +50,15 @@ const Contact = () => {
     {
       icon: <Mail size={24} />,
       title: "Email",
-      value: "atshaya.kumar@example.com",
-      link: "mailto:atshaya.kumar@example.com"
+      value: "atshayakumarr26@gmail.com",
+      link: "mailto:atshayakumarr26@gmail.com"
     },
-    {
-      icon: <Phone size={24} />,
-      title: "Phone",
-      value: "+91 98765 43210",
-      link: "tel:+919876543210"
-    },
+    // {
+    //   icon: <Phone size={24} />,
+    //   title: "Phone",
+    //   value: "+91 98765 43210",
+    //   link: "tel:+919876543210"
+    // },
     {
       icon: <MapPin size={24} />,
       title: "Location",

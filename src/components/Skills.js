@@ -136,7 +136,8 @@ const Skills = () => {
               {experience.map((exp, index) => (
                 <motion.div
                   key={index}
-                  className="skills__education-item"
+                  // className="skills__education-item"
+                  className={`skills__education ${exp.period.includes('Present') ? 'skills__education-item-highlight' : 'skills__education-dormant'}${exp.position === 'Software Engineer' ? ' software-engineer' : ''}`}
                   initial={{ opacity: 0, y: 20 }}
                   animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                   transition={{ duration: 0.6, delay: 0.4 + index * 0.1 }}

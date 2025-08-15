@@ -96,7 +96,7 @@ const Hero = () => {
             <Linkedin size={24} />
           </a>
           <a 
-            href="https://www.instagram.com/juz_call_me_ju/" 
+            href="https://www.instagram.com/atshai_kumar/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="hero__social-link"
