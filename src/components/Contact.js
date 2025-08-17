@@ -34,14 +34,17 @@ const Contact = () => {
         await fetch("https://6o60957wil.execute-api.ap-south-1.amazonaws.com/contact", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ name, email, message }),
+          body: JSON.stringify({ 
+            name: formData.name, 
+            email: formData.email, 
+            message: formData.message }),
         });
       setIsSubmitted(true);
       alert("Message sent ✅");
       setTimeout(() => setIsSubmitted(false), 5000);
       } catch (err) {
         console.error(err);
-        alert("Error submitting form");
+        alert("Error submitting form",err);
       }
     finally {
         setIsSubmitting(false);
