@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import ThemeToggle from './ThemeToggle';
-import jujuLogo from '../assets/juju-logo.svg';
+// import jujuLogo from '../assets/juju-logo.svg';
+import jujuLogo from '../assets/m.svg;
 import './Header.css';
 
 const Header = () => {
