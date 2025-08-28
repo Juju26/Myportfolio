@@ -7,6 +7,7 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import MvpLandingPage from './components/MVP/MvpLandingPage'
 import './App.css';
 
 function App() {
@@ -28,6 +29,13 @@ function App() {
         <p>Loading Portfolio...</p>
       </div>
     );
+  }
+  const mvp = "/guruva"
+  const isMvpPage = window.location.pathname.toLowerCase() === mvp;
+  console.log(window.location.pathname.toLowerCase());
+  
+  if (isMvpPage) {
+    return <MvpLandingPage />;
   }
 
   return (
