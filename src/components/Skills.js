@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { GraduationCap, Code, Award, Briefcase } from 'lucide-react';
-import './Skills.css';
+import '../assets/styles/Skills.css';
 
 const Skills = () => {
   const [ref, inView] = useInView({

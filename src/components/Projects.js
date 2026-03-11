@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { ExternalLink, Github, Eye, Code, Database, Smartphone } from 'lucide-react';
-import './Projects.css';
+import '../assets/styles/Projects.css';
 
 const Projects = () => {
   const [ref, inView] = useInView({
@@ -201,13 +201,11 @@ const Projects = () => {
             Interested in seeing more of my work?
           </p>
           <a
-            href="https://github.com/Juju26"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/detailedprojects"
             className="btn btn-primary"
           >
             <Github size={16} />
-            View More on GitHub
+            View Full Project Progression
           </a>
         </motion.div>
       </div>
