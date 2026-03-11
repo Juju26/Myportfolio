@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { ExternalLink, Github, Eye, Code, Database, Smartphone } from 'lucide-react';
-import './Projects.css';
+import '../assets/styles/Projects.css';
 
 const Projects = () => {
   const [ref, inView] = useInView({

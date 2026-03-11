@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Linkedin, Instagram, Github, ArrowDown } from 'lucide-react';
-import './Hero.css';
+import '../assets/styles/Hero.css';
 
 const Hero = () => {
   const scrollToAbout = () => {

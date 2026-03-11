@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { User, Target, Lightbulb, Code, Globe, Award } from 'lucide-react';
-import './About.css';
+import '../assets/styles/About.css';
 
 const About = () => {
   const [ref, inView] = useInView({

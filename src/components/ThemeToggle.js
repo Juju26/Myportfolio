@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Sun, Moon } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
-import './ThemeToggle.css';
+import '../assets/styles/ThemeToggle.css';
 
 const ThemeToggle = () => {
   const { isDark, toggleTheme } = useTheme();
