@@ -201,13 +201,11 @@ const Projects = () => {
             Interested in seeing more of my work?
           </p>
           <a
-            href="https://github.com/Juju26"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/detailedprojects"
             className="btn btn-primary"
           >
             <Github size={16} />
-            View More on GitHub
+            View Full Project Progression
           </a>
         </motion.div>
       </div>
