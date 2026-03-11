@@ -171,6 +171,29 @@
   background: var(--bg-secondary);
 }
 
+.timeline-details-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 1.25rem;
+  color: var(--text-secondary);
+}
+
+.timeline-detail-item {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-left: 1.25rem;
+}
+
+.timeline-detail-item::before {
+  content: "•";
+  color: var(--primary-color);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
 /* Responsiveness for smaller screens */
 @media (max-width: 640px) {
   .timeline-container {
