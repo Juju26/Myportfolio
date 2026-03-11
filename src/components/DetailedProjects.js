@@ -35,7 +35,7 @@ const DetailedProjects = () => {
                     id: "hackathons",
                     title: "Client Innovation Hackathons (4x Participant)",
                     date: "2023-2025",
-                    description: "Developed 'Data at a Glance', a comprehensive narrative dashboard that visualizes grants, tranches, and option values for participants.",
+                    description: "In one hackathon developed a api for my application called 'Data at a Glance', a comprehensive narrative on the applications layout that visualizes grants, tranches, and option values for participants.",
                     icon: <Lightbulb size={20} />,
                     details: [
                         "Recognized for delivering a highly innovative, user-centric solution to a complex financial data visibility problem."
@@ -54,17 +54,18 @@ const DetailedProjects = () => {
                     description: "Architecting a full-stack personal investment application using Java, Spring Boot, React, MySQL, Docker, and Kafka.",
                     icon: <LineChart size={20} />,
                     links: [
-                        { label: 'Source Code', url: '#', type: 'github' }
+                        { label: 'Source Code', url: 'https://github.com/Juju26/stockAvgcalculator', type: 'github' }
                     ]
                 },
                 {
                     id: "portfolio-aws",
                     title: "Portfolio (2025 AWS Hosting)",
                     date: "2025",
-                    description: "Zero downtime active messaging service portfolio managed on AWS with high cost optimization using AWS Amplify.",
+                    description: "Zero downtime active messaging service portfolio managed on AWS with cost optimization using AWS Amplify.",
                     icon: <Cloud size={20} />,
                     links: [
-                        { label: 'Read Article', url: '#', type: 'external' }
+                        { label: 'View Site', url: 'https://atshayakumar.site/', type: 'external' },
+                        { label: 'Read Article', url: 'https://www.linkedin.com/posts/atshayakumar_why-i-ended-up-using-aws-amplify-instead-activity-7363079804809613312-v69r?utm_source=share&utm_medium=member_desktop&rcm=ACoAACzrE3MBi1nz8h1HAIbRr6QOXWSB_atoZlk', type: 'external' }
                     ]
                 },
                 {
