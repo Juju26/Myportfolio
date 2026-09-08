@@ -71,7 +71,7 @@ const Hero = () => {
           >
             <div className="hero__image-container">
               <img 
-                src="/assets/img/DSC03449.JPG" 
+                src="/assets/img/profile.jpg" 
                 alt="Atshaya Kumar" 
                 className="hero__profile-img"
               />
