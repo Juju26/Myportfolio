@@ -81,16 +81,16 @@ const Skills = () => {
       }
   ];
 
-  const technicalSkills = [
-    { name: "Python", percentage: 95, color: "#3776AB", category: "Programming" },
-    { name: "JavaScript", percentage: 85, color: "#F7DF1E", category: "Programming" },
-    { name: "React.js", percentage: 80, color: "#61DAFB", category: "Frontend" },
-    { name: "Node.js", percentage: 75, color: "#339933", category: "Backend" },
-    { name: "Git/GitHub", percentage: 90, color: "#181717", category: "Tools" },
-    { name: "SQL/MySQL", percentage: 85, color: "#4479A1", category: "Database" },
-    { name: "HTML/CSS", percentage: 90, color: "#E34F26", category: "Frontend" },
-    { name: "UX/UI Design", percentage: 85, color: "#FF6B6B", category: "Design" }
-  ];
+  // const technicalSkills = [
+  //   { name: "Python", percentage: 95, color: "#3776AB", category: "Programming" },
+  //   { name: "JavaScript", percentage: 85, color: "#F7DF1E", category: "Programming" },
+  //   { name: "React.js", percentage: 80, color: "#61DAFB", category: "Frontend" },
+  //   { name: "Node.js", percentage: 75, color: "#339933", category: "Backend" },
+  //   { name: "Git/GitHub", percentage: 90, color: "#181717", category: "Tools" },
+  //   { name: "SQL/MySQL", percentage: 85, color: "#4479A1", category: "Database" },
+  //   { name: "HTML/CSS", percentage: 90, color: "#E34F26", category: "Frontend" },
+  //   { name: "UX/UI Design", percentage: 85, color: "#FF6B6B", category: "Design" }
+  // ];
 
   const skillCategories = [
     {
