@@ -7,6 +7,8 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import MvpLandingPage from './components/MVP/MvpLandingPage'
+import DetailedProjects from './components/DetailedProjects'
 import './App.css';
 
 function App() {
@@ -27,6 +29,28 @@ function App() {
         <div className="loading-spinner"></div>
         <p>Loading Portfolio...</p>
       </div>
+    );
+  }
+  const mvp = "/guruva"
+  const isMvpPage = window.location.pathname.toLowerCase() === mvp;
+  const isDetailedProjectsPage = window.location.pathname.toLowerCase() === '/detailedprojects';
+  console.log(window.location.pathname.toLowerCase());
+  
+  if (isMvpPage) {
+    return <MvpLandingPage />;
+  }
+
+  if (isDetailedProjectsPage) {
+    return (
+      <ThemeProvider>
+        <div className="App">
+          <Header />
+          <main>
+            <DetailedProjects />
+          </main>
+          <Footer />
+        </div>
+      </ThemeProvider>
     );
   }
 

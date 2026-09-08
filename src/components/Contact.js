@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Mail, Phone, MapPin, Send, CheckCircle } from 'lucide-react';
-import './Contact.css';
+import '../assets/styles/Contact.css';
 
 const Contact = () => {
   const [ref, inView] = useInView({
@@ -30,35 +30,40 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-
-    // Simulate form submission (replace with actual backend integration)
     try {
-      await new Promise(resolve => setTimeout(resolve, 2000));
+        await fetch("https://6o60957wil.execute-api.ap-south-1.amazonaws.com/contact", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ 
+            name: formData.name, 
+            email: formData.email, 
+            message: formData.message }),
+        });
       setIsSubmitted(true);
-      setFormData({ name: '', email: '', message: '' });
-      
-      // Reset success message after 5 seconds
+      alert("Message sent ✅");
       setTimeout(() => setIsSubmitted(false), 5000);
-    } catch (error) {
-      console.error('Error submitting form:', error);
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
+      } catch (err) {
+        console.error(err);
+        alert("Error submitting form",err);
+      }
+    finally {
+        setIsSubmitting(false);
+      }
+    };
 
   const contactInfo = [
     {
       icon: <Mail size={24} />,
       title: "Email",
-      value: "atshaya.kumar@example.com",
-      link: "mailto:atshaya.kumar@example.com"
+      value: "atshayakumarr26@gmail.com",
+      link: "mailto:atshayakumarr26@gmail.com"
     },
-    {
-      icon: <Phone size={24} />,
-      title: "Phone",
-      value: "+91 98765 43210",
-      link: "tel:+919876543210"
-    },
+    // {
+    //   icon: <Phone size={24} />,
+    //   title: "Phone",
+    //   value: "+91 98765 43210",
+    //   link: "tel:+919876543210"
+    // },
     {
       icon: <MapPin size={24} />,
       title: "Location",

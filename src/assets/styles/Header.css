@@ -202,13 +202,17 @@
   text-decoration: none;
 }
 
+
 .nav__logo-img {
   width: 36px;
   height: 36px;
   display: block;
   object-fit: contain;
   color: var(--primary-color);
-  transition: filter 0.2s;
+  transition: filter 0.2s, box-shadow 0.3s;
+  box-shadow: 0 0 16px 4px rgba(0, 173, 238, 0.25);
+  background: radial-gradient(circle, rgba(0,173,238,0.18) 60%, transparent 100%);
+  border-radius: 50%;
 }
 
 .nav__logo-title {

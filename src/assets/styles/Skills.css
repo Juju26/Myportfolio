@@ -57,11 +57,54 @@
   box-shadow: var(--shadow-md);
 }
 
+
+/* Highlighted experience and BE education */
+.skills__education-item-highlight {
+  border: 2.5px solid var(--primary-color);
+  box-shadow: 0 0 24px 6px rgba(0, 173, 238, 0.25);
+  
+  z-index: 1;
+  border-radius: 1.2rem;
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  display: flex;
+  gap: 1.2rem;
+}
+
+/* Software Engineer experience gets a blue border like BE */
+.skills__education-item-highlight.software-engineer {
+  border: 2.5px solid var(--primary-color);
+  box-shadow: 0 0 24px 6px rgba(0, 173, 238, 0.25);
+}
+
+
+.dark-theme .skills__education-highlight {
+  background-color: #1e293b;
+  border-color: var(--primary-color);
+  box-shadow: 0 6px 24px -4px var(--primary-color, #60a5fa, 0.18);
+}
+
+.skills__education-dormant {
+  opacity: 0.7;
+  filter: grayscale(0.2);
+  background-color: var(--bg-secondary);
+  border-radius: 1rem;
+  padding: 1.25rem 2rem;
+  margin-bottom: 1.2rem;
+}
+
 .skills__education-highlight {
   border: 2.5px solid var(--primary-color);
-  box-shadow: 0 6px 24px -4px var(--primary-color, #3b82f6, 0.12);
+  box-shadow: 0 0 24px 6px rgba(0, 173, 238, 0.25);
   background-color: #e8f1fd;
   z-index: 1;
+  border-radius: 1.2rem;
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  display: flex;
+  gap: 1.2rem;
 }
 
 .dark-theme .skills__education-highlight {
@@ -74,6 +117,9 @@
   opacity: 0.7;
   filter: grayscale(0.2);
   background-color: var(--bg-secondary);
+  border-radius: 1rem;
+  padding: 1.25rem 2rem;
+  margin-bottom: 1.2rem;
 }
 
 .skills__education-icon {

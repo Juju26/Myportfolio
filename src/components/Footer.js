@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Linkedin, Instagram, Github, Heart } from 'lucide-react';
-import './Footer.css';
+import '../assets/styles/Footer.css';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();

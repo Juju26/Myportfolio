@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { GraduationCap, Code, Award, Briefcase } from 'lucide-react';
-import './Skills.css';
+import '../assets/styles/Skills.css';
 
 const Skills = () => {
   const [ref, inView] = useInView({
@@ -38,9 +38,20 @@ const Skills = () => {
   const experience = [
     {
       icon: <Briefcase size={24} />,
+      company: "Presidio",
+      position: "Senior Engineer",
+      period: "Jun 2026 - Present",
+      achievements: [
+        "Leading development of complex application features and system architecture.",
+        "Collaborating with cross-functional teams to deliver high-quality solutions",
+        "Participating in code reviews and contributing to team best practices"
+      ]
+    },
+    {
+      icon: <Briefcase size={24} />,
       company: "Cognizant Technology Solutions",
       position: "Software Engineer",
-      period: "Oct 2024 - Present",
+      period: "Oct 2024 - Jun 2026",
       achievements: [
         "Responsible for end-to-end development and refactoring of complex application features, which includes designing and implementing high-performance solutions that align with Agile methodologies.",
         "Collaborating with cross-functional teams to deliver high-quality solutions",
@@ -136,7 +147,8 @@ const Skills = () => {
               {experience.map((exp, index) => (
                 <motion.div
                   key={index}
-                  className="skills__education-item"
+                  // className="skills__education-item"
+                  className={`skills__education ${exp.period.includes('Present') ? 'skills__education-item-highlight' : 'skills__education-dormant'}${exp.position === 'Software Engineer' ? ' software-engineer' : ''}`}
                   initial={{ opacity: 0, y: 20 }}
                   animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                   transition={{ duration: 0.6, delay: 0.4 + index * 0.1 }}

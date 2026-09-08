@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Linkedin, Instagram, Github, ArrowDown } from 'lucide-react';
-import './Hero.css';
+import '../assets/styles/Hero.css';
 
 const Hero = () => {
   const scrollToAbout = () => {
@@ -37,7 +37,7 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-             Software Engineer
+             Senior Engineer
             </motion.h2>
             
             <motion.p 
@@ -71,7 +71,7 @@ const Hero = () => {
           >
             <div className="hero__image-container">
               <img 
-                src="/assets/img/Frame 1profilepic.png" 
+                src="/assets/img/DSC03449.JPG" 
                 alt="Atshaya Kumar" 
                 className="hero__profile-img"
               />
@@ -96,7 +96,7 @@ const Hero = () => {
             <Linkedin size={24} />
           </a>
           <a 
-            href="https://www.instagram.com/juz_call_me_ju/" 
+            href="https://www.instagram.com/atshai_kumar/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="hero__social-link"
