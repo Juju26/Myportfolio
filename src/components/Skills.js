@@ -38,9 +38,20 @@ const Skills = () => {
   const experience = [
     {
       icon: <Briefcase size={24} />,
+      company: "Presidio",
+      position: "Senior Engineer",
+      period: "Jun 2026 - Present",
+      achievements: [
+        "Leading development of complex application features and system architecture.",
+        "Collaborating with cross-functional teams to deliver high-quality solutions",
+        "Participating in code reviews and contributing to team best practices"
+      ]
+    },
+    {
+      icon: <Briefcase size={24} />,
       company: "Cognizant Technology Solutions",
       position: "Software Engineer",
-      period: "Oct 2024 - Present",
+      period: "Oct 2024 - Jun 2026",
       achievements: [
         "Responsible for end-to-end development and refactoring of complex application features, which includes designing and implementing high-performance solutions that align with Agile methodologies.",
         "Collaborating with cross-functional teams to deliver high-quality solutions",

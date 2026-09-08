@@ -45,7 +45,7 @@ const About = () => {
 
   const achievements = [
     {
-      number: "3+",
+      number: "4+",
       label: "Years Experience"
     },
     {
@@ -103,8 +103,8 @@ const About = () => {
             <h3 className="about__name">I'm Atshaya Kumar</h3>
             <p className="about__description">
               An energetic being who always buzzes for success in things and has a curious nature.
-              I'm currently working as a Software Engineer in an MNC while studying the dynamics
-              of the industry and continuously learning new technologies.
+              I'm currently working as a Senior Engineer in an MNC while practicing the dynamics
+              of the industry, exploring AI and continuously learning new technologies.
             </p>
 
             <p className="about__description">

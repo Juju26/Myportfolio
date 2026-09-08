@@ -37,7 +37,7 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-             Software Engineer
+             Senior Engineer
             </motion.h2>
             
             <motion.p 
@@ -71,7 +71,7 @@ const Hero = () => {
           >
             <div className="hero__image-container">
               <img 
-                src="/assets/img/Frame 1profilepic.png" 
+                src="/assets/img/DSC03449.JPG" 
                 alt="Atshaya Kumar" 
                 className="hero__profile-img"
               />
